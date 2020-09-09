@@ -1,0 +1,8 @@
+*.o
+*.o.d
+main
+out.jpg
+
+# External sources
+stb_image.h
+stb_image_write.h
