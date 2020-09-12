@@ -2,6 +2,12 @@ CC ?= gcc
 CFLAGS = -Wall -O2
 LDFLAGS = -lm
 
+ifeq ("$(ENABLE_OPENMP)","1")
+CFLAGS += -DOPT_PLANE -march=native -fopenmp
+LDFLAGS += -fopenmp -lpthread
+endif
+
+
 all: main
 
 THIRD_PARTIES = stb_image.h stb_image_write.h

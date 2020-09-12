@@ -8,10 +8,10 @@ This program takes effective steps to generate pixels with smooth skin:
 
 Run `make` and you should see the generated `main` file. Its usage:
 ```
-./main <infile.jpg>
+./main -i <infile.jpg> [-l denoise_level] [-o output_img_name]
 ```
 
-The output filename is `out.jpg`.
+The default output filename is `out.jpg`.
 
 ## License
 
