@@ -26,7 +26,7 @@ main: $(THIRD_PARTIES) $(OBJS)
 
 check: main
 	$(RM) out.jpg
-	./main jserv.jpg
+	./main -i jserv.jpg -o out.jpg
 
 clean:
 	$(RM) main $(OBJS) $(deps)
